@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ShopList</title>
+</head>
+
+<body>
+    <div class="wraper __container">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__top top-header">
+                    <div class="top-header__logo">
+                        <a href=""><img src="images/logo.png" alt="Логотип"></a>
+                    </div>
+                    <div data-da=".header__bottom,997.98" class="top-header__search">
+                        <form action="" class="search-header">
+                            <input type="text" class="search-header__input" placeholder="Search">
+                            <button class="search-header__button">
+                                <img src="images/icons/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="top-header__actions header-actions">
+                        <div class="header-actions__user">
+                            <a href="" class="header-actions__link">
+                                <span>My Account</span>
+                            </a>
+                            <div class="header-actions__modal-auth modal-auth">
+                                <a href class="modal-auth__closeMmodal-window">×</a>
+                                <div class="modal-auth__accaunt ">
+                                    <a href=" " class="modal-auth__link ">Register</a>
+                                    <a href=" " class=" modal-auth__link ">Login</a>
+                                </div>
+                                <div class="modal-auth__language ">
+                                    <a href="# " class="modal-auth__link ">Language</a>
+                                    <div class="modal-auth__language-menu">
+                                        <a href="#" class="modal-auth__language-btn ">
+                                            <img class="modal-auth__language-img " src="images/en-gb.png " alt=" ">
+                                        </a>
+                                        <a href="#" class="modal-auth__language-btn ">
+                                            <img class="modal-auth__language-img" src="images/ar.png" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="modal-auth__currency ">
+                                    <a href=" " class="modal-auth__link">Currency</a>
+                                    <button class="modal-auth__currency-btn ">€ </button>
+                                    <button class="modal-auth__currency-btn ">£ </button>
+                                    <button class="modal-auth__currency-btn ">$</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="header-actions__cart">
+                            <span>My Cart
+                                <span id="cart-total">0</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__bottom bottom-header">
+                    <div data-da=".header__top,997.98" class="bottom-header__menu menu">
+                        <button class="menu__icon icon-menu">
+                            <span></span>
+                        </button>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+                                <li class="menu__item menu__item_parent"><a href="" class="menu__link menu__link_parent">Clothes</a>
+                                    <div class="menu__submenu submenu submenu_width">
+                                        <ul class="submenu__list">
+                                            <a href="" class="submenu__title">Kids</a>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Capri</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Jacket</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Shorts</a></li>
+                                        </ul>
+                                        <ul class="submenu__list">
+                                            <a href="" class="submenu__title">Women</a>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Dresses</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Frocks</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Suits</a></li>
+                                        </ul>
+                                        <ul class="submenu__list">
+                                            <a href="" class="submenu__title">Men</a>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Denim</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Jeans</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Shirts</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">T-Shirts</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item menu__item_parent "><a href="" class="menu__link menu__link_parent">Accessories</a>
+                                    <div class="menu__submenu submenu">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="" class="submenu__link">Cap</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Handbags</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item"><a href="" class="menu__link">Art</a></li>
+                                <li class="menu__item menu__item_parent"><a href="" class="menu__link menu__link_parent">KITCHEN ACCESSORIES</a>
+                                    <div class="menu__submenu submenu">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="" class="submenu__link">Blender</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Colander</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Mixings bowls</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Other</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item"><a href="" class="menu__link">SMART WATCH</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">More</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Blogs</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__limited limited-page">
+                <div class="limited-page__container">
+                    <div class="limited-page__top top-limited">
+                        <!-- Swiper -->
+                        <div class="top-limited__slider mainslider swiper">
+                            <div class="mainslider__wrapper swiper-wrapper">
+                                <div class="mainslider__slide swiper-slide">
+                                    <a href="" class="mainslider__image">
+                                        <img src="images/wireless.jpg" alt="Wireless">
+                                    </a>
+                                </div>
+                                <div class="mainslider__slide swiper-slide">
+                                    <a href="" class="mainslider__image">
+                                        <img src="images/jackets.jpg" alt="ackets">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mainslider__btn-prev"><img src="images/icons/arrow-left.svg" alt=""></div>
+                            <div class="mainslider__btn-next"><img src="images/icons/arrow-right.svg" alt=""></div>
+                            <div class="mainslider__pagination"></div>
+                        </div>
+                        <!--// Swiper -->
+                        <div class="top-limited__right">
+                            <div class="top-limited__right-block">
+                                <a href="# " class="">
+                                    <img src="images/laptop.jpg " class="" alt="Laptop">
+                                </a>
+                            </div>
+                            <div class="top-limited__right-block">
+                                <a href="# " class="">
+                                    <img src=" images/silver.jpg " class="" alt="Woman">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="limited-page__bottom  bottom-limited">
+                        <div class="bottom-limited__items">
+                            <div class="bottom-limited__column">
+                                <div class="bottom-limited__item">
+                                    <div class="bottom-limited__img">
+                                        <a href="# " class="">
+                                            <img src="images/bag.jpg " class="" alt="Laptop">
+                                        </a>
+                                    </div>
+                                    <div class="bottom-limited__content">
+                                        <div class="bottom-limited__title">EXTRAORDINARY</div>
+                                        <div class="bottom-limited__text">Handbags <span>Hot</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-limited__column">
+                                <div class="bottom-limited__item ">
+                                    <div class="bottom-limited__img">
+                                        <a href="# " class="">
+                                            <img src="images/lamp.jpg " class="" alt="Laptop">
+                                        </a>
+                                    </div>
+                                    <div class="bottom-limited__content">
+                                        <div class="bottom-limited__title">READY LIGHTING?</div>
+                                        <div class="bottom-limited__text"><span>Colorfu</span>Hot Offer!!!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-limited__column">
+                                <div class="bottom-limited__item">
+                                    <div class="bottom-limited__img">
+                                        <a href="# " class="">
+                                            <img src="images/neckless.jpg " class="" alt="Laptop">
+                                        </a>
+                                    </div>
+                                    <div class="bottom-limited__content">
+                                        <div class="bottom-limited__title">NECKLESS <span>Limited</span></div>
+                                        <div class="bottom-limited__text">Extraordinary </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="page__products products-page _tabs">
+                <div class="products-page__container">
+                    <div class="products-page__content">
+                        <div class="products-page__heading">
+                            <h2 class="products-page__title">Our Products</h2>
+                            <nav class="products-page__nav">
+                                <div class="products-page__item _tabs-item _active">Latest</div>
+                                <div class="products-page__item _tabs-item">Bestseller</div>
+                                <div class="products-page__item _tabs-item">Special</div>
+                            </nav>
+                            <div class="products-page__btn-prev"><img src="images/icons/arrow-left.svg" alt=""></div>
+                            <div class="products-page__btn-next"><img src="images/icons/arrow-right.svg" alt=""></div>
+                        </div>
+                        <div class="products-page__body product-slider swiper _tabs-block _active">
+                            <div class="product-slider__wrapper swiper-wrapper">
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-page__body product-slider product-slider_2 swiper _tabs-block">
+                            <div class="product-slider swiper-wrapper">
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/scarf.jpg" alt="" class="block-img">
+                                            <img src="images/blouse.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-page__body product-slider product-slider_3 swiper _tabs-block">
+                            <div class="product-slider swiper-wrapper">
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="page__banner banner">
+                <div class="banner__container">
+                    <div class="banner__top">
+                        <div class="banner__cart cart-banner">
+                            <div class="cart-banner__img">
+                                <a href="">
+                                    <img src="images/Cms-banner-01.jpg " alt="banner ">
+                                </a>
+                            </div>
+                            <div class="cart-banner__text">
+                                <div class="cart-banner__sale">40% OFF</div>
+                                <div class="cart-banner__title">FASHION LAB</div>
+                                <div class="cart-banner__descripton">Explore Our Range</div>
+                            </div>
+                        </div>
+                        <div class="banner__cart cart-banner">
+                            <div class="cart-banner__img">
+                                <a href="">
+                                    <img src="images/Cms-banner-02.jpg " alt="banner ">
+                                </a>
+                            </div>
+                            <div class="cart-banner__text">
+                                <div class="cart-banner__sale">50% OFF</div>
+                                <div class="cart-banner__title">FASHION LAB</div>
+                                <div class="cart-banner__descripton">Explore Our Range</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__bottom">
+                        <div class="banner__cart cart-banner">
+                            <div class="cart-banner__img">
+                                <a href="">
+                                    <img src="images/Offer-banner-01.jpg" alt="banner ">
+                                </a>
+                            </div>
+                            <div class="cart-banner__text cart-banner__text_width">
+                                <div class="cart-banner__sale">LIMITED EDITION</div>
+                                <div class="cart-banner__title">SUMMER SPECIAL OFF</div>
+                                <div class="cart-banner__descripton">Lorem Ipsum is simply dummy text of the printing and tyeseting industry.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="page__specail specail-page products-page">
+                <div class="products-page__container">
+                    <div class="products-page__content">
+                        <div class="products-page__heading">
+                            <h2 class="products-page__title">Special</h2>
+                            <div class="products-page__btn-prev"><img src="images/icons/arrow-left.svg" alt=""></div>
+                            <div class="products-page__btn-next"><img src="images/icons/arrow-right.svg" alt=""></div>
+                        </div>
+                        <div class="products-page__body product-slider swiper _tabs-block _active">
+                            <div class="product-slider__wrapper swiper-wrapper">
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-slider__slide swiper-slide">
+                                    <div class="product-slider__item item-product">
+                                        <a href="" class="item-product__img">
+                                            <img src="images/chair.jpg" alt="" class="block-img">
+                                            <img src="images/laptop-product.jpg" class="hover-img" alt="">
+                                        </a>
+                                        <div class="item-product__info">
+                                            <a href="" class="item-product__title">Aminatiom Descentation </a>
+                                            <!-- Rating -->
+                                            <div class="item-product__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <!--// Rating -->
+                                            <div class="item-product__price price-product">
+                                                <div class="price-product__real">$1,082.00</div>
+                                                <div class="price-product__sale">10%</div>
+                                                <div class="price-product__old-price">$1,202.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="item-product__add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="page__brands brands-page">
+                <div class="brands-page__container">
+                    <div class="brands-page__slider swiper">
+                        <div class="brands-page__wrapper swiper-wrapper">
+                            <div class="brands-page__slide swiper-slide">
+                                <a href=""><img src="images/brand1.png " alt="brand1"></a>
+                            </div>
+                            <div class="brands-page__slide swiper-slide">
+                                <a href=""><img src="images/brand2.png " alt="brand2"></a>
+                            </div>
+                            <div class="brands-page__slide swiper-slide">
+                                <a href=""><img src="images/brand3.png " alt="brand3"></a>
+                            </div>
+                            <div class="brands-page__slide swiper-slide">
+                                <a href=""><img src="images/brand4.png " alt="brand4"></a>
+                            </div>
+                            <div class="brands-page__slide swiper-slide">
+                                <a href=""><img src="images/brand1.png " alt="brand1"></a>
+                            </div>
+                            <div class="brands-page__slide swiper-slide">
+                                <a href=""><img src="images/brand2.png " alt="brand2"></a>
+                            </div>
+                        </div>
+                        <div class="brands-page__btn-prev"><img src="images/icons/arrow-left.svg" alt=""></div>
+                        <div class="brands-page__btn-next"><img src="images/icons/arrow-right.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <section class="page__latest latest-page">
+                <h2 class="latest-page__title">Latest blog</h2>
+                <div class="latest-page__items">
+                    <div class="latest-page__column">
+                        <div class="latest-page__card card-latest">
+                            <div class="card-latest__img">
+                                <img src="images/latest.jpg" alt="">
+                            </div>
+                            <div class="card-latest__content">
+                                <div class="card-latest__date">18.09.2018</div>
+                                <a href="" class="card-latest__text">Nullam ullamcorper nisl quis ornare molestie</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-page__column">
+                        <div class="latest-page__card card-latest">
+                            <div class="card-latest__img">
+                                <img src="images/latest.jpg" alt="">
+                            </div>
+                            <div class="card-latest__content">
+                                <div class="card-latest__date">18.09.2018</div>
+                                <a href="" class="card-latest__text">Nullam ullamcorper nisl quis ornare molestie</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-page__column">
+                        <div class="latest-page__card card-latest">
+                            <div class="card-latest__img">
+                                <img src="images/latest.jpg" alt="">
+                            </div>
+                            <div class="card-latest__content">
+                                <div class="card-latest__date">18.09.2018</div>
+                                <a href="" class="card-latest__text">Nullam ullamcorper nisl quis ornare molestie</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-page__column">
+                        <div class="latest-page__card card-latest">
+                            <div class="card-latest__img">
+                                <img src="images/latest.jpg" alt="">
+                            </div>
+                            <div class="card-latest__content">
+                                <div class="card-latest__date">18.09.2018</div>
+                                <a href="" class="card-latest__text">Nullam ullamcorper nisl quis ornare molestie</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="page__service service-page">
+                <div class="service-page__body">
+                    <div class="service-page__item item-service">
+                        <div class="item-service__img"></div>
+                        <div class="item-service__text">
+                            <a href="" class="item-service__title">item-service</a>
+                            <div class="item-service__describe">With A 30 Day</div>
+                        </div>
+                    </div>
+                    <div class="service-page__item item-service">
+                        <div class="item-service__img"></div>
+                        <div class="item-service__text">
+                            <a href="" class="item-service__title">item-service</a>
+                            <div class="item-service__describe">With A 30 Day</div>
+                        </div>
+                    </div>
+                    <div class="service-page__item item-service">
+                        <div class="item-service__img"></div>
+                        <div class="item-service__text">
+                            <a href="" class="item-service__title">item-service</a>
+                            <div class="item-service__describe">With A 30 Day</div>
+                        </div>
+                    </div>
+                    <div class="service-page__item item-service">
+                        <div class="item-service__img"></div>
+                        <div class="item-service__text">
+                            <a href="" class="item-service__title">item-service</a>
+                            <div class="item-service__describe">With A 30 Day</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer ">
+            <div class="footer__row row-footer">
+                <div class="row-footer__column ">
+                    <div class="row-footer__item">
+                        <div class="row-footer__img location "></div>
+                        <div class="row-footer__text ">705-Infinity Centre, Beside trafy building, united state</div>
+                    </div>
+                    <div class="row-footer__item">
+                        <div class="row-footer__img mobail "></div>
+                        <a href="tel:0123456789" class="row-footer__text ">Call us: 0123-456-789</a>
+                    </div>
+                    <div class="row-footer__item">
+                        <div class="row-footer__img mail "></div>
+                        <a href="mailto:support@yourstore.com" class="row-footer__text ">support@yourstore.com</a>
+                    </div>
+                </div>
+                <div class="row-footer__column ">
+                    <div class="row-footer__title ">INFORMATION</div>
+                    <nav class="row-footer__menu menu-footer">
+                        <ul class="menu-footer__list ">
+                            <li class="menu-footer__item ">
+                                <a href=" " class="menu-footer__link">About Us</a>
+                            </li>
+                            <li class="menu-footer__item ">
+                                <a href=" " class="menu-footer__link">Delivery Information</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href=" " class="menu-footer__link">Privacy Policy</a>
+                            </li>
+                            <li class="menu-footer__item ">
+                                <a href=" " class="menu-footer__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row-footer__column">
+                    <div class="row-footer__title ">MY ACCOUNT</div>
+                    <nav class="row-footer__menu menu-footer">
+                        <ul class="menu-footer__list ">
+                            <li class="menu-footer__item ">
+                                <a href=" " class="menu-footer__link">My account</a>
+                            </li>
+                            <li class="menu-footer__item ">
+                                <a href=" " class="menu-footer__link">Specials</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href=" " class="menu-footer__link">Contact Us</a>
+                            </li>
+                            <li class="menu-footer__item ">
+                                <a href=" " class="menu-footer__link">Brands</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row-footer__column ">
+                    <div class="row-footer__title ">SIGN UP FOR NEWSLETTER</div>
+                    <form action="# " class="row-footer__search ">
+                        <input type="email" placeholder="E-mail " class="row-footer__input">
+                        <button class="row-footer__btn ">SUBSCRIBE</button>
+                    </form>
+                    <div class="row-footer__social">
+                        <a href=" ">
+                            <i class="fa fa-facebook "></i>
+                        </a>
+                        <a href=" ">
+                            <i class="fa fa-google "></i>
+                        </a>
+                        <a href=" ">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href=" ">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                        <a href=" ">
+                            <i class="fa fa-instagram "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy copy-footer">
+                <div class="copy-footer__text ">
+                    <h4>Powered By OpenCart Your Store © 2021</h4>
+                </div>
+                <div class="copy-footer__icon ">
+                    <div class="icon-footer1 "></div>
+                    <div class="icon-footer2 "></div>
+                    <div class="icon-footer3 "></div>
+                    <div class="icon-footer4 "></div>
+                    <div class="icon-footer5 "></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/burger.js "></script>
+    <script src="js/dynamic_adapt.js "></script>
+    <script src="js/modal.js "></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="js/slider.js "></script>
+    <script src="js/tabs.js "></script>
+    <script src="js/rating.js"></script>
+</body>
+
+</html>
